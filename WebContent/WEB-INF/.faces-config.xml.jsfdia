@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#jsf#dist_exp_uni_reg.jsp"
+  PATH="/jsf/dist_exp_uni_reg.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#jsf#dist_exp_uni_reg.jsp:0" NAME="item"
+   PATH="/jsf/dist_exp_uni_reg.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="reply_obj_exp:#{dist_exp_uni_reg_action.replyObjection}:#jsf#ReplyForObjectionExportUnit.jsp"
+    NAME="output" PATH="/jsf/ReplyForObjectionExportUnit.jsp"
+    TARGET="rules:#jsf#ReplyForObjectionExportUnit.jsp"
+    TITLE="#{dist_exp_uni_reg_action.replyObjection}:reply_obj_exp" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#jsf#ReplyForObjectionExportUnit.jsp"
+  PATH="/jsf/ReplyForObjectionExportUnit.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#jsf#ReplyForObjectionExportUnit.jsp:0"
+   NAME="item" PATH="/jsf/ReplyForObjectionExportUnit.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bck:#{replyForObjectionExportUnitAction.backToRegistration}:#jsf#dist_exp_uni_reg.jsp"
+    NAME="output" PATH="/jsf/dist_exp_uni_reg.jsp"
+    TARGET="rules:#jsf#dist_exp_uni_reg.jsp"
+    TITLE="#{replyForObjectionExportUnitAction.backToRegistration}:bck" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#jsf#Download_Export_Order.jsp"
+  PATH="/jsf/Download_Export_Order.jsp" SHAPE="240,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#jsf#Download_Export_Order.jsp:0" NAME="item"
+   PATH="/jsf/Download_Export_Order.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="reply_obj_exp:#{download_Export_OrderAction.replyObjection}:#jsf#replytoobjection_eoi.jsp"
+    NAME="output" PATH="/jsf/replytoobjection_eoi.jsp"
+    TARGET="rules:#jsf#replytoobjection_eoi.jsp"
+    TITLE="#{download_Export_OrderAction.replyObjection}:reply_obj_exp" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#jsf#replytoobjection_eoi.jsp"
+  PATH="/jsf/replytoobjection_eoi.jsp" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#jsf#replytoobjection_eoi.jsp:0" NAME="item"
+   PATH="/jsf/replytoobjection_eoi.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="GO:#{replytoobjection_eoi_Action.back}:#jsf#Download_Export_Order.jsp"
+    NAME="output" PATH="/jsf/Download_Export_Order.jsp"
+    TARGET="rules:#jsf#Download_Export_Order.jsp"
+    TITLE="#{replytoobjection_eoi_Action.back}:GO" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
