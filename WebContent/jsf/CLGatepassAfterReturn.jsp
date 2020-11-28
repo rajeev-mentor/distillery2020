@@ -24,6 +24,27 @@
 		<h:form>
 			<div class="panel panel-default">
 				<div class="panel-body">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 					<TABLE width="100%" align="center">
 						<TR>
 							<TD>
@@ -44,7 +65,7 @@
 							<TD><h:inputHidden value="#{cLGatepassAfterReturnAction.hidden}"></h:inputHidden>
 								<h5>
 									<h:outputText rendered="#{!cLGatepassAfterReturnAction.saveflg}"
-										value="Dispatch For Accidental CL PD-25"
+										value="Dispatch For Accidental CL PD-25   ----------------------------------"
 										style="FONT-STYLE: italic; COLOR: #0000a0; FONT-WEIGHT: bold; FONT-SIZE: x-large;"></h:outputText>
 								</h5></TD>
 						</TR>
