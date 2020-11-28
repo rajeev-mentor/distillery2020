@@ -6,6 +6,24 @@
 	xmlns:a4j="http://richfaces.org/a4j">
 
 	<f:view>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		<h:form>
 			<div>
 				<rich:spacer height="20px;"></rich:spacer>
