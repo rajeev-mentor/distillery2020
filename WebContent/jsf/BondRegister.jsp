@@ -48,7 +48,6 @@
 			</div>
 
 			<hr style="border-top: 7px #D0D3D4; border-top-style: dashed;"></hr>
-
 			<rich:spacer height="10px;"></rich:spacer>
 			<div class="co-md-12 row">
 				<div class="col-md-2" align="right">
